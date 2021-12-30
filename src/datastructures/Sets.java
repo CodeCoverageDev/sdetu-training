@@ -1,12 +1,16 @@
 package datastructures;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class Sets {
     public static void main(String[] args) {
+	// LinkedHash - in order that they were entered
+	// HashSet - complete random order
+	// Treeset - rearrange to natural order
 	// 1. Define the collection
-	Set<String> animals = new HashSet<String>(); // random order
+	Set<String> animals = new LinkedHashSet<>(); // random order
 
 	// 2. Adding elements
 	animals.add("Dog");
